@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maro Boutique — Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="index">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Maro<span> Boutique</span></a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Produits</a>
+        <a href="cart.html" id="cart-link">Panier (<span id="cart-count">0</span>)</a>
+        <a href="login.html" id="auth-link">Se connecter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Des produits choisis avec soin.</h1>
+        <p>Petit e-commerce demo — design responsive, panier persistant, page produit et compte utilisateur (demo).</p>
+      </div>
+      <img src="https://picsum.photos/600/320?commerce" alt="Photo boutique" />
+    </section>
+
+    <section>
+      <h2 class="section-title">Nos Bestsellers</h2>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Maro Boutique — Démo</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

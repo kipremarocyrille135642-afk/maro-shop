@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ma Boutique — Connexion / Inscription</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="auth">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Maro<span> Boutique</span></a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Produits</a>
+        <a href="cart.html" id="cart-link">Panier (<span id="cart-count">0</span>)</a>
+        <a href="login.html" id="auth-link">Se connecter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container auth-page">
+    <div class="auth-card">
+      <h2>Se connecter</h2>
+      <form id="login-form">
+        <label>Email<input type="email" id="login-email" required /></label>
+        <label>Mot de passe<input type="password" id="login-pass" required minlength="6" /></label>
+        <div class="form-actions">
+          <button class="btn" type="submit">Connexion</button>
+        </div>
+      </form>
+
+      <hr />
+
+      <h2>Créer un compte</h2>
+      <form id="register-form">
+        <label>Nom complet<input type="text" id="reg-name" required /></label>
+        <label>Email<input type="email" id="reg-email" required /></label>
+        <label>Mot de passe<input type="password" id="reg-pass" required minlength="6" /></label>
+        <div class="form-actions">
+          <button class="btn outline" type="submit">S'inscrire</button>
+        </div>
+      </form>
+
+      <div id="auth-msg" role="status" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ma Boutique — Démo</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

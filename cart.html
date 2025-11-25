@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maro Boutique — Panier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Maro<span> Boutique</span></a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Produits</a>
+        <a href="cart.html" id="cart-link">Panier (<span id="cart-count">0</span>)</a>
+        <a href="login.html" id="auth-link">Se connecter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Ton Panier</h2>
+
+    <section id="cart-view" class="cart-view" aria-live="polite"></section>
+
+    <section id="checkout" class="checkout hidden" aria-hidden="true">
+      <h3>Paiement (simulation)</h3>
+      <form id="checkout-form">
+        <div class="form-row">
+          <label>Nom complet<input required type="text" id="fullname" /></label>
+        </div>
+        <div class="form-row">
+          <label>Adresse<input required type="text" id="address" /></label>
+        </div>
+        <div class="form-row">
+          <label>Ville<input required type="text" id="city" /></label>
+        </div>
+        <div class="form-row">
+          <label>Code postal<input required type="text" id="zip" /></label>
+        </div>
+        <div class="form-row">
+          <label>Méthode de paiement
+            <select id="payment">
+              <option>Carte bancaire (simulée)</option>
+              <option>PayPal (simulée)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Payer (simulé)</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ma Boutique — Démo</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
